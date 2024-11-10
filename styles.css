@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b32;
+    background-image: linear-gradient(to right, rgba(27, 27, 50, 0.8), rgba(27, 27, 50, 0.8)), 
+                      url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOSCC4qesDh3hpn6qGdPEy9BHm1lbiyPfXeQ&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f5f6f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  label {
+    display: block;
+    margin:0.5rem 0;
+    font-weight: bold;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2a40;
+    color: #f5f6f7;
+    border: 1px solid #3b3b4f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    background-color: #3b3b4f;
+    color: #f5f6f7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #56566f;
+  }
+
+  .inline {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+   
+  #success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+    display: none;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
